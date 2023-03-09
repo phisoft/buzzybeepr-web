@@ -179,7 +179,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   color: white;
   white-space: nowrap;
@@ -197,7 +197,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #3498db;
+ color: rgb(247, 11, 247);
 }
 
 .navbar .getstarted,
@@ -237,7 +237,7 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .navbar .dropdown ul a i {
@@ -432,9 +432,20 @@ z-index: 1;
   text-align: center;
   animation: float 3s ease-in-out infinite;
 }
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
 
-#hero .icon-box .img {
-  animation: float 3s ease-in-out infinite;
+
+  /* animation: float 3s ease-in-out infinite;
 }
 
 
@@ -449,7 +460,7 @@ z-index: 1;
     transform: translatey(0);
   }
 }
-/* .services .icon-box::before {
+.services .icon-box::before {
 content: "";
 position: absolute;
 background: #fde860f0;
@@ -884,6 +895,13 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+#services {
+  margin-top: 40px;
+  /* padding-top: 20px; */
+  /* background: #eef7fc; */
+  background-size: cover;
+}
+
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -898,7 +916,7 @@ section {
 .services .icon-box::before {
   content: "";
   position: absolute;
-  background: #fde860f0;
+  background: rgb(80, 28, 80);
   right: -60px;
   top: -40px;
   width: 100px;
@@ -909,7 +927,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #f8e35af0 ;
+  background: rgb(80, 28, 80);
   right: 0;
   top: 0;
   width: 100%;
@@ -925,35 +943,43 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #ffdf00 ;
+  /* background: rgb(80, 28, 80); */
   transition: all 0.3s ease-in-out;
 }
 
 .services .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #000000;
+  /* color: rgb(80, 28, 80); */
+  color: rgb(247, 11, 247);
 }
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(80, 28, 80); 
 }
 
-.services .title a {
-  color: #111;
-}
+/* .services .title h4 {
+  color: rgb(80, 28, 80); 
+} */
 
 .services .description {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
-.services .icon-box:hover .title a,
+.services .icon-box:hover .title {
+  color: #fff;
+}
+
 .services .icon-box:hover .description {
   color: #fff;
+  font-size: 20px;
 }
 
 .services .icon-box:hover .icon {
@@ -961,9 +987,28 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #ffdf00;
+  color: rgb(80, 28, 80);
 }
 
+
+#services .btn-get-started {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: rgb(247, 11, 247);
+  border: 2px solid rgb(247, 11, 247);
+  background-color: white;
+}
+
+#services .btn-get-started:hover {
+  background: rgb(80, 28, 80);
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
@@ -986,6 +1031,7 @@ transform:translateY(40%) scale(3);
   /* background: #eef7fc; */
   background-size: cover;
   background: rgb(131, 37, 131);
+  height: 100vh;
 }
 
 
@@ -1120,6 +1166,9 @@ transform:translateY(40%) scale(3);
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials{
+  background-color: #d3f5f5;;
+}
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -1533,6 +1582,10 @@ transform:translateY(40%) scale(3);
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #d3f5f5;;
+}
+
 .contact .contact-about h3 {
   font-size: 40px;
   margin: 0 0 10px 0;
@@ -1841,27 +1894,84 @@ transform:translateY(40%) scale(3);
 }
 
 #gif-sec .flex-container {
-
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  font-size: 30px;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height:400px;
+  justify-content: space-between;
+  
 }
 
 #gif-sec  .flex-item-left {
-  background-color: #f1f1f1;
-  padding: 10px;
+  background: rgb(80, 28, 80);
+  /* padding: 10px; */
   flex: 50%;
+  border-radius: 10px;
+    box-shadow: 10px 10px rgb(224, 73, 73);
 }
 
-#gif-sec  .flex-item-right {
+#gif-sec .btn-get-started {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: rgb(247, 11, 247);;
+  border: 2px solid white;
+  background-color: white;
+  padding-top: 10px;
+}
+
+#gif-sec .btn-get-started:hover {
+  background: rgba(143, 67, 143, 0.76);
+  color: #fff;
+}
+
+#gif-sec  .flex-item-left  h2{
+  text-align:center;
+  font-size: 40px;
+  padding-top: 4%;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#gif-sec  .flex-item-left  p{
+  padding-top: 4%;
+  text-align:center;
+  color: white;
+  font-size: 25px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  
+}
+
+#gif-sec  .flex-item-left  span{
+  color: rgb(247, 11, 247);
+  font-size: 30px;
+}
+
+
+/* #gif-sec  .flex-item-right {
   background-color: dodgerblue;
   padding: 10px;
   flex: 50%;
+  border-radius: 10px;;
+  box-shadow: 10px 10px;
 }
 
+#gif-sec  .flex-item-right  p{
+  text-align:center;
+  color: white;
+  font-size: 25px;
+  line-height: 1.6;
+  
+} */
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
   #gif-sec .flex-item-right, .flex-item-left {
