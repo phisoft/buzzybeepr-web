@@ -9,9 +9,39 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #444444;
+  min-height: 150vh;
 }
+
+#w{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background: url('../img/bee.png'); */
+  background-color: #4aa3df;
+  background-size: cover ;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(180vh at 50% -80vh);
+
+}
+
+#w .content{
+  max-width: 1000px;
+  text-align: center;
+}
+
+#w .content1 h2{
+  /* font-family: monospace; */
+  font-family: 'DM Sans', sans-serif;
+  font-size: 5em;
+  color: white;
+  font-weight: 700;
+}
+
 
 a {
   color: #3498db;
@@ -29,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -81,7 +111,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 22px 0;
-  background: #ffdf00;
+  background: rgb(131, 37, 131);
 }
 
 #header.header-scrolled {
@@ -100,7 +130,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #cfb403;
+  color: white;
   text-decoration: none;
 }
 
@@ -139,8 +169,8 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 15px;
-  font-weight: 400;
-  color: #555555;
+  font-weight: 500;
+  color: white;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -165,7 +195,7 @@ h6 {
   padding: 8px 25px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: blu;
 }
 
 .navbar .getstarted:hover,
@@ -184,7 +214,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(131, 37, 131);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -353,17 +383,68 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   margin-top: 70px;
+
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  color: rgb(88, 4, 88);
+  text-align: center;
+  /* animation: float 3s ease-in-out infinite; */
+}
+
+#hero span {
+  color: rgb(247, 11, 247);
+}
+
+#hero .icon-box {
+padding: 30px;
+position: relative;
+overflow: hidden;
+background: #fff;
+transition: all 0.3s ease-in-out;
+z-index: 1;
+}
+
+#hero .icon-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
   font-weight: 700;
   line-height: 56px;
-  color: black;
+  color: rgb(228, 82, 228);
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
 }
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+/* .services .icon-box::before {
+content: "";
+position: absolute;
+background: #fde860f0;
+right: -60px;
+top: -40px;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+transition: all 0.3s;
+z-index: -1;
+} */
+
 
 #hero h2 {
   color: #484848;
@@ -372,7 +453,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -414,7 +495,7 @@ h6 {
   }
 
   #hero .hero-img img {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -483,7 +564,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
@@ -508,9 +589,33 @@ section {
 }
 
 .section-title p {
-  margin: 15px 0 0 0;
+  margin: 15px 0 0 15px;
+  font-size: 25px;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 1px;
+
 }
 
+.section-title span {
+  margin: 15px 0 0 0;
+  color: rgb(105, 105, 71);
+  font-weight: bold;
+  font-size: 25px;
+  animation: glow 2s ease-in-out infinite; /* starts the animation */
+  text-shadow: 0 0 10px rgba(105, 105, 71, 0.7); /* creates a glowing effect */
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px rgba(105, 105, 71, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(105, 105, 71, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(105, 105, 71, 0.7);
+  }
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -556,8 +661,15 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 25px; 
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
 }
+
 
 .about .content ul {
   list-style: none;
@@ -587,7 +699,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -655,7 +767,7 @@ section {
 .counts .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   color: #484848;
 }
@@ -666,7 +778,7 @@ section {
   margin-top: 20px;
   color: #484848;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -776,9 +888,27 @@ section {
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
+/* .more-services::before{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+width: 100vh;
+height: 100vh;
+background: blue;
+border-radius: 50%;
+transform-origin: bottom;
+transform:translateY(40%) scale(3);
+} */
+
 .more-services {
-  padding-top: 20px;
+  margin-top: 40px;
+  /* padding-top: 20px; */
+  background-color: white;
+  background-size: cover;
 }
+
+
 
 .more-services .card {
   border: 0;
@@ -800,19 +930,42 @@ section {
   border-radius: 5px;
 }
 
+.more-services .row{
+  margin-bottom: 20px;
+}
+
 .more-services .card-title {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .more-services .card-title a {
   color: #222222;
+  /* font-family: monospace; */
+  font-size: 30px;
 }
 
 .more-services .card-text {
-  color: #5e5e5e;
+  color: #0a0909;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  overflow: hidden; /* hides the original text */
+  border-right: 0.15em solid #0a0909; /* creates a blinking cursor effect */
+  white-space: nowrap; /* prevents text from wrapping */
+  animation: typing 8s steps(40, end) forwards; /* starts the typing animation */
 }
+
+@keyframes typing {
+  from {
+    width: 0; /* sets the initial width to zero */
+  }
+  to {
+    width: 100%; /* sets the final width to 100% (original width of the text) */
+  }
+}
+
 
 .more-services .read-more a {
   color: #777777;
@@ -827,7 +980,7 @@ section {
 }
 
 .more-services .card:hover .card-body {
-  background: #f4d83ad6;
+  background: wheat;
 }
 
 .more-services .card:hover .read-more a,
@@ -1251,109 +1404,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .box {
-  padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #f9f9f9;
-}
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  margin-top: 15px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #222222;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #3498db;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #bababa;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #222222;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #3498db;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
-  text-align: center;
-}
-
-.pricing .box .btn-buy {
-  display: inline-block;
-  padding: 10px 40px 12px 40px;
-  border-radius: 50px;
-  border: 2px solid #3498db;
-  color: #3498db;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.pricing .box .btn-buy:hover {
-  background: #3498db;
-  color: #fff;
-}
-
-.pricing .recommended {
-  border-color: #3498db;
-}
-
-.pricing .recommended .btn-buy {
-  background: #3498db;
-  color: #fff;
-}
-
-.pricing .recommended .btn-buy:hover {
-  background: #2383c4;
-  border-color: #2383c4;
-}
-
-/*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
 .faq .faq-item {
@@ -1376,7 +1426,7 @@ section {
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 32px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .faq .faq-item p {
@@ -1399,7 +1449,7 @@ section {
 .contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: #888;
 }
 
@@ -1627,4 +1677,29 @@ section {
 
 #footer .footer-links a:hover {
   color: #3498db;
+}
+
+#problems {
+  width: 100%;
+  height: 100vh;
+  margin-top: 70px;
+}
+
+  /* padding: 50px; */
+  /* border: 5px solid rgb(68, 33, 126); */
+  /* border-radius: 10px; */
+#problems .div2 {
+  width: 500px;
+  height: 400px; 
+  background-color: rgba(143, 28, 143, 0.678);
+}
+
+#problems .div2 h1{
+  text-align: center;
+  color: white;
+  font-size: 38px; 
+  padding-top: 30%;
+  padding-bottom: 50px;
+
+
 }
