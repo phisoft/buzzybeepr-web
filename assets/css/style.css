@@ -1767,12 +1767,78 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #0f0f0f;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
-  color: #222222;
-  font-size: 14px;
+  height: 100%;
 }
+
+#footer .footer-info {
+  padding-left: 40px;
+  height: 400px;
+  
+}
+
+#footer .footer-info h2{
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#footer .footer-info p{
+  color: rgba(255, 255, 255, 0.808);
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#footer .footer-info .form-group{
+  width: 300px;
+  box-sizing: border-box;
+  /* border-radius: 0; */
+  box-shadow: none;
+  font-size: 14px;
+ 
+}
+
+
+#footer .footer-info .social-links a {
+  font-size: 10px;
+  display: inline-block;
+  color: #f9fafa;
+  line-height: 1;
+  padding: 8px;
+  /* margin-right: 4px; */
+  margin: 20px 4px 0 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  border: 1px solid #ffffff;
+}
+
+#footer .footer-info .social-links a:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+
+#footer .footer-links a {
+  color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 18px;
+  padding-left: 26px;
+  line-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer .footer-links a:hover {
+  border-left: 2px solid;
+  border-left-color: white;
+}
+
+/* 
 
 #footer .credits {
   font-size: 13px;
@@ -1791,4 +1857,4 @@ section {
 
 #footer .footer-links a:hover {
   color: #3498db;
-}
+} */
