@@ -1802,7 +1802,7 @@ section {
 
 
 #footer .footer-info .social-links a {
-  font-size: 10px;
+  font-size: 12px;
   display: inline-block;
   color: #f9fafa;
   line-height: 1;
@@ -1826,7 +1826,7 @@ section {
 #footer .footer-links a {
   color: #ffffff;
   font-family: 'Libre Franklin', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   padding-left: 26px;
   line-height: 50px;
   padding-top: 10px;
