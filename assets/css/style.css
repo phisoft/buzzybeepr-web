@@ -1800,8 +1800,11 @@ section {
  
 }
 
+#footer .social-links {
+  text-align: center;
+}
 
-#footer .footer-info .social-links a {
+#footer .social-links a {
   font-size: 12px;
   display: inline-block;
   color: #f9fafa;
@@ -1817,7 +1820,7 @@ section {
   border: 1px solid #ffffff;
 }
 
-#footer .footer-info .social-links a:hover {
+#footer .social-links a:hover {
   background: #3498db;
   color: #fff;
 }
@@ -1836,6 +1839,11 @@ section {
 #footer .footer-links a:hover {
   border-left: 2px solid;
   border-left-color: white;
+}
+
+#footer .footer-info i{
+  color: white;
+
 }
 
 /* 
