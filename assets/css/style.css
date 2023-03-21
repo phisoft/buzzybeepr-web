@@ -1327,14 +1327,15 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid black;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #030303;
 }
 
 .portfolio-details .portfolio-info {
+  margin: 50px 0 0 0;
   padding: 30px;
   box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
 }
@@ -1369,6 +1370,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
