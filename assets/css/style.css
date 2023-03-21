@@ -1097,9 +1097,9 @@ section {
   margin-left: -200px;
 }
 
-/* .testimonials .swiper-slide {
-  width:400px;
-} */
+.testimonials .swiper-slide {
+  width: 50px;
+}
 
 .testimonials .testimonial-wrap {
   padding-left: 50px;
@@ -1174,23 +1174,6 @@ section {
   margin: 15px auto 15px auto;
 }
 
-.testimonials .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid white;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #000000;
-}
-
 .testimonials .portfolio-info {
   position: absolute;
   top: 90%; 
@@ -1230,6 +1213,22 @@ section {
   }
 }
 
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid white;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #000000;
+}
 
 /*--------------------------------------------------------------
 # Portfolio
