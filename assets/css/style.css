@@ -210,8 +210,8 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 10px 30px 30px 30px;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
@@ -227,44 +227,12 @@ h6 {
   margin-left: 5px;
 }
 
-/* .navbar a {
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: border-bottom 0.3s ease-in-out;
-  }
-  
-  .navbar a:hover {
-    border-bottom: 3px solid white;
-    color: white;
-  } */
-
-  .navbar a {
-  position: relative;
-  color: white;
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #3498db;
 }
-
-.navbar a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background-color: white;
-  transform: scaleX(0);
-  transform-origin: middle;
-  transition: transform 250ms ease-in-out; /* Change transition property to transform */
-}
-
-.navbar a:hover:after {
-  transform: scaleX(1);
-  width: 100%;
-}
-
-.navbar a:hover {
-  color: white;
-}
-
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
@@ -1394,15 +1362,23 @@ section {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
-  background: #fff;
+  /* background: #fff; */
+  height: 70%;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  transition: opacity 0.3s ease;
 }
 
+.team .member:hover .member-img {
+  opacity: 0.3;
+}
+
+
+/* 
 .team .member .social {
   position: absolute;
   left: 0;
@@ -1437,16 +1413,25 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
+} */
 
 .team .member .member-info {
-  padding: 25px 15px;
+  margin-bottom: 70%;
+  background: white;
+  padding: 30px 15px;
+  transition: transform 0.3s ease;
 }
+
+
+.team .member:hover .member-info {
+  transform: translateY(-100%);
+}
+
 
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 25px;
   color: #222222;
 }
 
