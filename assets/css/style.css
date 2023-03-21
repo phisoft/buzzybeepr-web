@@ -1077,8 +1077,41 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+  background: rgb(0, 0, 0);
+}
+
+.testimonials .section-title h1{
+  color: white;
+}
+
+.testimonials .section-title hr {
+  width: 500vw;
+  text-align: left;
+  border: 1px solid #f8f8f8;
+  opacity: 1;
+  right: 0;
+  z-index: 2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: -200px;
+}
+
+/* .testimonials .swiper-slide {
+  width:400px;
+} */
+
 .testimonials .testimonial-wrap {
   padding-left: 50px;
+  /* width: 400px; */
+}
+
+.testimonials .testimonial-wrap img {
+  transition: opacity 0.3s ease;
+}
+
+.testimonials .testimonial-wrap:hover img {
+  opacity: 0.8;
 }
 
 .testimonials .testimonials-carousel,
@@ -1151,11 +1184,29 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #3498db;
+  border: 1px solid white;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #3498db;
+  background-color: #000000;
+}
+
+.testimonials .portfolio-info {
+  position: absolute;
+  top: 90%; 
+  left: 48px;
+  /* right: 0; */
+  text-align: center;
+  z-index: 1;
+}
+
+.testimonials .portfolio-info .portfolio-links i{
+  color: black;
+  font-size: 35px;
+}
+
+.testimonials .portfolio-info:hover i {
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -1178,6 +1229,7 @@ section {
     left: auto;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1226,7 +1278,7 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(34, 34, 34, 0.6);
+  background: rgb(34, 34, 34);
 }
 
 .portfolio .portfolio-wrap::before {
