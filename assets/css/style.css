@@ -1752,7 +1752,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 400;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .breadcrumbs ol {
@@ -1764,6 +1764,10 @@ section {
   font-size: 14px;
 }
 
+.breadcrumbs ol li a{
+  color: rgb(161, 158, 158);
+}
+
 @media (max-width: 992px) {
   .breadcrumbs ol {
     margin-top: 10px;
@@ -1772,15 +1776,20 @@ section {
 
 .breadcrumbs ol li+li {
   padding-left: 10px;
+  /* text-decoration: underline; */
 }
 
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #3c3c3c;
+  color: black;
   content: "/";
 }
 
+.breadcrumbs ol li:hover {
+  color: black;
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
