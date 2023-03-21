@@ -35,21 +35,21 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3498db;
-  width: 40px;
-  height: 40px;
+  background: rgb(43, 42, 42);
+  width: 50px;
+  height: 60px;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #57aae1;
+  box-shadow: 0 0 10px 5px white;
   color: #fff;
 }
 
@@ -1641,7 +1641,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #3498db;
+  color: black;
   float: left;
   line-height: 1;
 }
@@ -1799,12 +1799,172 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #0f0f0f;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
-  color: #222222;
-  font-size: 14px;
+  height: 100%;
 }
+
+#footer .r1 {
+  margin-top: 50px;
+}
+
+#footer .footer-info {
+  padding-left: 40px;
+  height: 400px;
+  
+}
+
+#footer .footer-info h2{
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+}
+
+#footer .footer-info p{
+  color: rgba(255, 255, 255, 0.808);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 15px;
+}
+
+/* #footer .footer-form {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#footer .footer-form .f1 input[type="text"] {
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+#footer .footer-form .f1 input[placeholder="Email address"] {
+  padding-left: 10px;
+}
+
+#footer .footer-form .btn-submit {
+  padding-left: 140px;
+  padding-top: 5px;
+}
+
+#footer .footer-form .btn-submit input[type="submit"] {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 15px;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid #ffffff;
+} */
+
+
+/* #footer .footer-form .btn-submit input[type="submit"]:hover {
+  background: black;
+  color: white;
+} */
+
+
+#footer .footer-form input[type="email"]{
+  display: inline-block;
+  width: 40%;
+  padding: 18px 36px;
+  /* margin: 8px 0; */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 50px;
+  margin-top: 10px;
+  border: none;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.06); 
+
+}
+#footer .footer-form input,
+#footer .footer-form input::-webkit-input-placeholder {
+    font-size: 16px;
+    line-height: 3;
+}
+
+#footer .footer-form  .bt {
+  margin-left: -150px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+  padding: 10px 32px;
+
+  /* Only necessary for .btn */
+  cursor: pointer;
+  background-color:#070707;
+  border: solid black;
+  color: #fff;
+}
+
+#footer .footer-form  .bt:hover {
+ 
+  cursor: pointer;
+  background-color:white;
+  color: black;
+}
+
+#footer .social-links {
+  text-align: center;
+}
+
+#footer .social-links a {
+  font-size: 12px;
+  display: inline-block;
+  color: #f9fafa;
+  line-height: 1;
+  padding: 8px;
+  /* margin-right: 4px; */
+  margin: 20px 4px 0 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s;
+  border: 1px solid #ffffff;
+  
+}
+
+
+#footer .social-links a:hover {
+  background: white;
+  color: black;
+}
+
+#footer .footer-links a {
+  color: #ffffff;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  padding-left: 26px;
+  line-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#footer .footer-links a:hover {
+  border-left: 2px solid;
+  border-left-color: white;
+}
+
+#footer .footer-info i{
+color: white;
+ padding-left: 50px;
+ font-size: 18px;
+
+}
+
+/* #footer .logo-footer{
+  margin-left: 49%;
+  width: 50px;
+  height: auto;
+  
+} */
+
+/* 
 
 #footer .credits {
   font-size: 13px;
@@ -1823,4 +1983,4 @@ section {
 
 #footer .footer-links a:hover {
   color: #3498db;
-}
+} */
