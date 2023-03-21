@@ -35,21 +35,21 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #3498db;
-  width: 40px;
-  height: 40px;
+  background: rgb(43, 42, 42);
+  width: 50px;
+  height: 60px;
   border-radius: 4px;
   transition: all 0.4s;
 }
 
 .back-to-top i {
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #57aae1;
+  box-shadow: 0 0 10px 5px white;
   color: #fff;
 }
 
