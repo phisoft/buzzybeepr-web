@@ -1875,3 +1875,17 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+
+/* ===================
+      NEW SWIPER
+=================== */
+.sample-slider{
+  width:50%;
+}
+.sample-slider img{
+  width: 100%;
+}
+
+.sample-slider .swiper-button-next{
+  color:black;
+}
