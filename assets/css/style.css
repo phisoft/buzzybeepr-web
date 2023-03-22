@@ -210,8 +210,8 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  /* justify-content: space-between; */
+  padding: 10px 30px 30px 30px;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
@@ -227,12 +227,44 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
-  color: #3498db;
+/* .navbar a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 3px solid white;
+    color: white;
+  } */
+
+  .navbar a {
+  position: relative;
+  color: white;
 }
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: middle;
+  transition: transform 250ms ease-in-out; /* Change transition property to transform */
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+  width: 100%;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
@@ -312,7 +344,6 @@ h6 {
     left: -100%;
   }
 }
-
 /**
 * Mobile Navigation 
 */
@@ -778,9 +809,6 @@ section {
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts {
-  /* padding-top: 0; */
-}
 
 .counts .content {
   padding: 0;
