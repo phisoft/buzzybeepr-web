@@ -2069,7 +2069,7 @@ color: white;
 
 
 .testimonials1 .sample-slider{
-  padding: 40px 40px 0 40px;
+  margin: 90px 0 0 0;
   width:100%;
 }
 
@@ -2085,7 +2085,7 @@ color: white;
   opacity: 0.5;
 }
 
-.testimonials1 .sample-slider .swiper-button-next{
+/* .testimonials1 .sample-slider .swiper-button-next{
   padding-left: 10px;
 }
 .testimonials1 .sample-slider .swiper-button-prev{
@@ -2095,10 +2095,10 @@ color: white;
 .testimonials1 .sample-slider .swiper-button-next,
 .testimonials1 .sample-slider .swiper-button-prev{
   color:rgb(255, 255, 255);
-}
+} */
 
 .testimonials1 .sample-slider .swiper-pagination{
-  margin-top: 20px;
+  margin-top: 90px;
   position: relative;
 }
 

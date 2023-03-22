@@ -10,17 +10,17 @@
         disableOnInteraction: false
       },
     slidesPerView: 3,      
-    spaceBetween: 40,              //how many slides to show
+    spaceBetween: 30,              //how many slides to show
     centeredSlides: true,               //centering the first slide
     pagination: {                       //pagination(dots)
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true
     },
-    navigation: {                       
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+    // navigation: {                       
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
 
 })
 
