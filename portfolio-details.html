@@ -42,43 +42,25 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html">Vesperr</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto active" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <nav id="navbar" class="navbar">
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#services">Services</a></li>
             </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+          </nav>
+  
+        <div class="logo topnav-centered">
+          <a href="index.html"><img src="assets/img/logo-w.png" alt="" class="img-fluid"></a>
+        </div>
+
+          <nav id="navbar" class="navbar">
+              <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Stories</a></li>
+                <li><a class="nav-link scrollto" href="#about">Solution</a></li>
+                <li><a class="nav-link scrollto" href="#services">Contact</a></li>
+              </ul>
+          </nav>
 
     </div>
   </header><!-- End Header -->
@@ -137,6 +119,9 @@
                 <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
               </ul>
             </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8">
             <div class="portfolio-description">
               <h2>This is an example of portfolio detail</h2>
               <p>
@@ -144,41 +129,79 @@
               </p>
             </div>
           </div>
-
         </div>
+      </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="container-fluid">
+    <div class="row r1">
+      <div class="col-8">
+        <div class="footer-info">
+          <h2>Buzzy Bee</h2>
+          <p> Subscribe to receive the latest information from Buzzy Bee</p>
+          <div class="footer-form"> 
+
+            <!-- /action_page.php -->
+            <form action=""> 
+              <input type="email"  maxlength="50" required placeholder="Enter your email address">
+              <button class="bt">Subscribe</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="footer-links ">
+          <a href="#intro" class="scrollto">Home</a><br>
+          <a href="#intro" class="scrollto">About</a><br>
+          <a href="#intro" class="scrollto">Service</a><br>
+      </div>
+      </div>
+      <div class="col-2">
+        <div class="footer-links ">
+            <a href="#intro" class="scrollto">Stories</a><br>
+            <a href="#intro" class="scrollto">Solution</a><br>
+            <a href="#intro" class="scrollto">Contact</a><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+<div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
+          <!-- <div class="copyright">
             &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
+          </div> -->
+          <div class="credits"> -
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            <!-- Designed by <a href="https://bootstrapmade.com/">Buzzybee</a> -->
+
           </div>
         </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </nav>
-        </div>
+
       </div>
-    </div>
+    </div> 
   </footer><!-- End Footer -->
+
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
