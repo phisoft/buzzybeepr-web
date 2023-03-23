@@ -1653,7 +1653,7 @@ section {
   margin-left: -200px;
 }
 
-.contact .contact-about h3 {
+/* .contact .contact-about h3 {
   font-size: 28px;
   margin: 0 0 10px 0;
   padding: 0;
@@ -1693,7 +1693,7 @@ section {
 .contact .social-links a:hover {
   background: #3498db;
   color: #fff;
-}
+} */
 
 .contact .info {
   color: #444444;
@@ -1712,6 +1712,18 @@ section {
   line-height: 28px;
   font-size: 14px;
 }
+
+.contact .info a {
+  color: #444444;
+  font-size: 14px;
+}
+
+.contact .info a:hover {
+  color: #020202;
+ 
+}
+
+
 
 .contact .php-email-form .error-message {
   display: none;
@@ -1768,7 +1780,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #3498db;
+  border-color: #000000;
 }
 
 .contact .php-email-form button[type=submit] {
@@ -1899,14 +1911,18 @@ section {
 #footer .footer-links a {
   color: #ffffff;
   padding-left: 15px;
+  padding: 0 10px 15px 10px;
 }
 
-#footer .footer-links a:first-child {
-  padding-left: 0;
-}
-
+#footer .footer-links a {
+  /* padding-left: 0; */
+  border-bottom: 3px solid transparent;
+  transition: border-bottom 0.3s ease-in-out;
+  }
+ 
 #footer .footer-links a:hover {
-  color: #3498db;
+  border-bottom: 3px solid white;
+  color: white;
 }
 
 /* ===================
