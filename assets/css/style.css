@@ -1436,15 +1436,17 @@ section {
 --------------------------------------------------------------*/
 .team {
   background-color: #000000;
+  height:100vh;
 }
 
 .team .member {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  /* margin-bottom: 0px; */
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
   /* background: #fff; */
-  height: 70%;
+  height: 60%;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1458,46 +1460,8 @@ section {
   opacity: 0.3;
 }
 
-
-/* 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #222222;
-  margin: 0 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  color: #3498db;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-} */
-
 .team .member .member-info {
-  margin-bottom: 70%;
+  margin-bottom: 110%;
   background: white;
   padding: 30px 15px;
   transition: transform 0.3s ease;
@@ -2076,8 +2040,9 @@ color: white;
 =================== */
 .testimonials1 {
   background: black;
-  height: 90vh;
+  height:70vh;
 }
+
 
 .testimonials1 .section-title h1{
   color: white;
@@ -2095,10 +2060,41 @@ color: white;
   margin-left: -200px;
 }
 
-
 .testimonials1 .sample-slider{
-  margin: 90px 0 0 0;
+  margin: 55px 0 0 0;
   width:100%;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials1 {
+    background: black;
+    height:40vh;
+  }
+
+  .testimonials1 .section-title h1{
+    color: white;
+    font-size: 35px;
+    padding-top: 5px;
+    margin: 0 0 10px 0 ;
+  }
+  
+  .testimonials1 .section-title hr {
+    width: 500vw;
+    text-align: left;
+    border: 1px solid #f8f8f8;
+    opacity: 1;
+    right: 0;
+    z-index: 2;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: -200px;
+  }
+
+  .testimonials1 .sample-slider{
+    margin: 0 0 10% 0;
+    width:100%;
+  }
+  
 }
 
 .testimonials1 .sample-slider img{
@@ -2152,6 +2148,7 @@ color: white;
   z-index: 1;
 }
 
+
 .testimonials1 .portfolio-info .portfolio-links i{
   color: black;
   font-size: 28px;
@@ -2159,4 +2156,35 @@ color: white;
 
 .testimonials1 .portfolio-info:hover i {
   color: white;
+}
+
+@media screen and (max-width: 990px) {
+  .testimonials1 .portfolio-info {
+    position: absolute;
+    top: 80%; 
+    left: 9px;
+    /* right: 0; */
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .testimonials1 .portfolio-info {
+    position: absolute;
+    top: 70%; 
+    left: 5px;
+    /* right: 0; */
+    text-align: center;
+    z-index: 1;
+  }
+
+  .testimonials1 .portfolio-info .portfolio-links i{
+    color: black;
+    font-size: 20px;
+  }
+  
+  .testimonials1 .portfolio-info:hover i {
+    color: white;
+  }
 }
