@@ -888,7 +888,11 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  height: 50vh;
+  height: 100vh;
+}
+
+.services .section-title {
+  padding: 350px 0 50px 0;
 }
 
 .services .icon-box {
@@ -898,8 +902,9 @@ section {
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(4, 5, 8, 0.377);
   transition: all 0.5s ease-in-out;
-  border-radius: 20px 0 20px 0;
+  /* border-radius: 20px 0 20px 0; */
   z-index: 1;
+  height: 300px;
 }
 
 .services .icon-box::before {
