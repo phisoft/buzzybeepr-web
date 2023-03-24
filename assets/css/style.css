@@ -1369,6 +1369,8 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  background: cover;
+  height: 80vh;
 }
 
 .portfolio-details .portfolio-details-slider img {
