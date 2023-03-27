@@ -888,7 +888,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services {
-  height: 60vh;
+  height: 65vh;
 }
 
 .services .section-title {
@@ -898,20 +898,24 @@ section {
   position: relative;
   color: #000000;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .services .r1 {
   margin-right: 10px;
   padding: 10px;
+  height: 400px;
 }
 
 .services .r2 {
   padding: 10px;
+  height: 400px;
 }
 
 .services .r3 {
   margin-left: 10px;
   padding: 10px;
+  height: 400px;
 }
 
 .services .icon-box {
