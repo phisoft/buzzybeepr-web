@@ -949,7 +949,9 @@ section {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 
@@ -1058,9 +1060,25 @@ section {
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
-.more-services {
+/* .more-services {
   margin-top: 20px;
   background-color: #ffffff;
+}
+
+.more-services .section-title h1{
+  color: black;
+}
+
+.more-services .section-title hr {
+  width: 500vw;
+  text-align: left;
+  border: 1px solid black;
+  opacity: 1;
+  right: 0;
+  z-index: 2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: -200px;
 }
 
 .more-services .card {
@@ -1071,17 +1089,17 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  
 }
 
 .more-services .card-body {
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 15px 30px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  transition: ease-in-out 0.4s;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
 }
+
 
 .more-services .card-title {
   font-weight: 700;
@@ -1090,15 +1108,15 @@ section {
 }
 
 .more-services .card-title a {
-  color: #222222;
+  color: rgb(0, 0, 0);
 }
 
 .more-services .card-text {
-  color: #5e5e5e;
+  color: rgb(0, 0, 0);
 }
 
 .more-services .read-more a {
-  color: #777777;
+  color: #575757;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
@@ -1110,15 +1128,15 @@ section {
 }
 
 .more-services .card:hover .card-body {
-  background: #3498db;
+  background: rgba(0, 0, 0, 0.507);
 }
 
 .more-services .card:hover .read-more a,
 .more-services .card:hover .card-title,
 .more-services .card:hover .card-title a,
 .more-services .card:hover .card-text {
-  color: #fff;
-}
+  color: #ffffff;
+} */
 
 /*--------------------------------------------------------------
 # Features
@@ -2168,3 +2186,104 @@ section {
     color: white;
   }
 }
+
+
+/* ================================= */
+.try .r1{
+  margin-bottom: 100px;
+  /* margin-left: 150px; */
+}
+
+.try .content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: -100px;
+  padding: 20px;
+  background: rgb(2, 2, 2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+}
+
+.try .content h4{
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+}
+
+
+.try .content p{
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+}
+
+.try .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-top: 100px;
+  transition: 0.5s;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.try .btn-get-started:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ================================= */
+
+.more-services .r2{
+  margin-bottom: 50px;
+  /* margin-left: 150px; */
+}
+
+.more-services  .content2 {
+  margin-top: 150px;
+}
+
+.more-services  .content2 h4{
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.more-services  .content2 p{
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.more-services  .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 40px;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid #000000;
+  background: white;
+}
+
+.more-services  .btn-get-started:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
