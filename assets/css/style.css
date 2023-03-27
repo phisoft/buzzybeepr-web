@@ -949,7 +949,9 @@ section {
   font-weight: 700;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 
@@ -1058,7 +1060,7 @@ section {
 /*--------------------------------------------------------------
 # More Services
 --------------------------------------------------------------*/
-.more-services {
+/* .more-services {
   margin-top: 20px;
   background-color: #ffffff;
 }
@@ -1087,7 +1089,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* backdrop-filter: blur(10px); */
+  
 }
 
 .more-services .card-body {
@@ -1134,7 +1136,7 @@ section {
 .more-services .card:hover .card-title a,
 .more-services .card:hover .card-text {
   color: #ffffff;
-}
+} */
 
 /*--------------------------------------------------------------
 # Features
@@ -2185,9 +2187,11 @@ section {
   }
 }
 
+
+/* ================================= */
 .try .r1{
   margin-bottom: 100px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 .try .content {
@@ -2216,20 +2220,64 @@ section {
   color: white;
 }
 
-.try2 .content2 {
+.try .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 40px;
+  margin-top: 100px;
+  transition: 0.5s;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.try .btn-get-started:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* ================================= */
+
+.more-services .r2{
+  margin-bottom: 50px;
+  /* margin-left: 150px; */
+}
+
+.more-services  .content2 {
   margin-top: 150px;
 }
 
-.try2 .content2 h4{
+.more-services  .content2 h4{
   font-weight: 700;
   font-size: 25px;
   font-family: 'Libre Franklin', sans-serif;
   color: rgb(0, 0, 0);
 }
 
-.try2 .content2 p{
+.more-services  .content2 p{
   font-family: 'Libre Franklin', sans-serif;
 }
+
+.more-services  .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px 40px;
+  transition: 0.5s;
+  color: black;
+  border: 2px solid #000000;
+  background: white;
+}
+
+.more-services  .btn-get-started:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
 
 
 
