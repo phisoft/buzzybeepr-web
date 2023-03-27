@@ -608,6 +608,12 @@ section {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 28px;
+  }
+}
+
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -636,6 +642,8 @@ section {
 .section-title p {
   margin: 15px 0 0 0;
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -804,6 +812,12 @@ section {
   background: #000000;
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+ .about .content p:last-child {
+  font-size: 14px;
+}
 }
 
 /*--------------------------------------------------------------
