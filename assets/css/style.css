@@ -2107,3 +2107,19 @@ section {
     color: white;
   }
 }
+
+.try .card-block {
+  margin: 40px 0;
+  background: #000000;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 60px 30px 55px 40px;
+  position: relative;
+  /* z-index: 10;
+  box-shadow: 0px 30px 70px 0px rgba(223, 227, 234, 0.5); */
+}
+
+
+
+
+
