@@ -959,11 +959,15 @@ section {
 }
 
 .services .r3 {
-  margin-left: 10px;
+  margin-right: 10px;
   padding: 10px;
   height: 400px;
 }
 
+.services .r4 {
+  padding: 10px;
+  height: 400px;
+}
 .services .icon-box {
   margin-bottom: 120px;
 }
@@ -1015,23 +1019,44 @@ section {
   .services {
     height: auto;
   }
-  .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+  .services .r1, .services .r2, .services .r3 .services .r4 {
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
+@media (min-width: 1024px) {
+  .services {
+    height: auto;
+  }
+  .services .r1, .services .r2, .services .r3 .services .r4 {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .services {
     height: auto;
   }
-  .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+  .services .r1, .services .r2, .services .r3 .services .r4 {
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
 }
-
 
 @media (max-width: 767px) {
   .services {
@@ -1042,33 +1067,43 @@ section {
     font-size: 30px;
   }
 
-  .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+  .services .r1, .services .r2, .services .r3 .services .r4 {
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
 
   .services .icon-box {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 
-  /* .services .icon-box2 {
-    margin-top: 200px;
-  } */
-
   .services .icon-box2 {
-    order: 2; /* Change the order to 2 */
+    order: 2;
     margin-top:0;
   }
   
   .services .r2 {
-    flex-direction: column; /* Change the flex direction to column */
+    flex-direction: column;
   }
   
   .services .r2 .icon {
-    margin-top: 200px;
-    order: 1; /* Change the order of the icon to 1 */
+    margin-bottom: 10px;
+    order: 1;
   }
+
+  .services .r4 {
+    flex-direction: column;
+  }
+  
+  .services .r4 .icon {
+    margin-bottom: 10px;
+    order: 1;
+  }
+
 
   .services .icon {
     margin-bottom: 10px;
@@ -1092,6 +1127,17 @@ section {
     text-align: justify;
   }
 }
+
+@media (max-width: 767px) {
+  .services .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 
 
 .services .r1:hover {
@@ -1125,11 +1171,24 @@ section {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px 0px;
  }
-.services .r3:hover .icon{
+ 
+ .services .r3:hover .icon{
+   background: white;
+   border:#111;
+ }
+ .services .r3:hover .icon i{
+   color: black;
+ }
+
+ .services .r4:hover {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px 0px;
+ }
+.services .r4:hover .icon{
   background: white;
   border:#111;
 }
-.services .r3:hover .icon i{
+.services .r4:hover .icon i{
   color: black;
 }
 
@@ -1692,6 +1751,7 @@ section {
   margin-bottom: 30px;
 }
 
+
 .team .member {
   margin-top: 10px;
   /* margin-bottom: 0px; */
@@ -1707,14 +1767,21 @@ section {
   position: relative;
   overflow: hidden;
   transition: opacity 0.3s ease;
+  height: 160px; /* set a fixed height for all images */
+}
+
+.team .member .member-img img {
+  width: 100%;
+  height: auto;
 }
 
 .team .member:hover .member-img {
   opacity: 0.3;
 }
 
+
 .team .member .member-info {
-  margin-bottom: 110%;
+  margin-bottom: 50%;
   background: white;
   padding: 30px 15px;
   transition: transform 0.3s ease;
@@ -1729,7 +1796,7 @@ section {
 .team .member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 25px;
+  font-size: 23px;
   color: #222222;
 }
 
