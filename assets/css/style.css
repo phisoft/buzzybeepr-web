@@ -1015,22 +1015,43 @@ section {
     height: auto;
   }
   .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
+@media (min-width: 1024px) {
+  .services {
+    height: auto;
+  }
+  .services .r1, .services .r2, .services .r3 {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 1024px) {
   .services {
     height: auto;
   }
   .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
 }
-
 
 @media (max-width: 767px) {
   .services {
@@ -1042,31 +1063,31 @@ section {
   }
 
   .services .r1, .services .r2, .services .r3 {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
   }
 
   .services .icon-box {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
 
-  /* .services .icon-box2 {
-    margin-top: 200px;
-  } */
-
   .services .icon-box2 {
-    order: 2; /* Change the order to 2 */
+    order: 2;
     margin-top:0;
   }
   
   .services .r2 {
-    flex-direction: column; /* Change the flex direction to column */
+    flex-direction: column;
   }
   
   .services .r2 .icon {
-    margin-top: 200px;
-    order: 1; /* Change the order of the icon to 1 */
+    margin-bottom: 10px;
+    order: 1;
   }
 
   .services .icon {
@@ -1091,6 +1112,17 @@ section {
     text-align: justify;
   }
 }
+
+@media (max-width: 767px) {
+  .services .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
 
 
 .services .r1:hover {
@@ -1691,6 +1723,7 @@ section {
   margin-bottom: 30px;
 }
 
+
 .team .member {
   margin-top: 10px;
   /* margin-bottom: 0px; */
@@ -1701,6 +1734,7 @@ section {
   height: 60%;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
 
 .team .member .member-img {
   position: relative;
