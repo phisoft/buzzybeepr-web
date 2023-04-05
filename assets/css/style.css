@@ -1012,6 +1012,7 @@ section {
   font-size: 17px;
   line-height: 28px;
   margin-bottom: 50px;
+  text-align: justify;
 }
 
 @media (min-width: 1024px) {
