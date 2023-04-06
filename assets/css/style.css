@@ -386,7 +386,7 @@ h6 {
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
-  right: 15px;
+  left: 30px;
 }
 
 .navbar-mobile ul {
@@ -454,6 +454,10 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+/* .navbar-mobile .dropdown .dropdown-active > .navbar .dropdown>.dropdown-active{
+  display: block;
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
