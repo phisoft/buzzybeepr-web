@@ -837,6 +837,13 @@ section {
   text-decoration: none;
 }
 
+.about p {
+  margin: auto;
+  width: 100%;
+  padding: 20% 30px 20% 0;
+  text-align: justify;
+}
+
 @media (max-width: 768px) {
  .about .content p:last-child {
   font-size: 14px;
@@ -863,6 +870,16 @@ section {
   .about .content p:last-child {
     margin-left: 0px;
     margin-top: 20px;
+  }
+
+  .about p {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .about span {
+    text-align: center;
   }
 
 }
