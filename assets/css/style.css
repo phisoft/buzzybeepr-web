@@ -176,7 +176,6 @@ h6 {
 /**
 * Desktop Navigation 
 */
-
 .left-menu-container {
   float: left;
 }
@@ -206,6 +205,16 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+}
+/* For desktop, display hidden the three nav item*/
+.list_nav{
+  display: none;
+  /* background-color: blue; */
+}
+.list_nav li a{
+  display: block;
+  /* background-color: blue; */
+  /* font-weight: 800; */
 }
 
 .navbar li {
@@ -375,7 +384,7 @@ h6 {
   .navbar ul {
     display: none;
   }
-}
+  /* For mobile, display back the three nav item*/
 
 .navbar-mobile {
   position: fixed;
@@ -414,6 +423,7 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #222222;
+  font-weight: 800;
 }
 
 .navbar-mobile a:hover,
@@ -425,6 +435,19 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+}
+
+.list_nav{
+  display: block;
+  /* background-color: blue; */
+  padding-top: 16vh;
+}
+.list_nav li a{
+  display: block;
+  /* background-color: blue; */
+  font-weight: 400;
+}
+
 }
 
 .navbar-mobile .dropdown ul {
