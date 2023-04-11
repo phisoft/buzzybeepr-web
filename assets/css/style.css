@@ -296,7 +296,7 @@ h6 {
   background: #4aa3df;
 }
 
-.navbar .dropdown ul {
+.navbar .navbar ul {
   display: block;
   position: absolute;
   left: 30px;
@@ -374,6 +374,8 @@ h6 {
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
+  /* display: grid; /for make the class list disapear due to display of the nav item*/
+  display: grid;
 }
 
 @media (max-width: 991px) {
@@ -405,17 +407,19 @@ h6 {
 }
 
 .navbar-mobile ul {
+  padding-bottom: 100px;
   display: block;
   position: absolute;
+  max-width: 380px;
   top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 0px;
   background-color: #fff;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 1s linear;
 }
 
 .navbar-mobile a,
