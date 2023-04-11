@@ -349,7 +349,15 @@ h6 {
   left: 100%;
   visibility: visible;
 }
-
+.mobile-nav-toggle {
+  /* color: #222222; */
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -410,7 +418,7 @@ h6 {
   padding-bottom: 100px;
   display: block;
   position: absolute;
-  max-width: 380px;
+  max-width: 50%;
   top: 55px;
   right: 0px;
   bottom: 0px;
@@ -427,13 +435,15 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #222222;
-  font-weight: 800;
+  font-weight: 400;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #3498db;
+  color:black;
+  font: bold;
+  font-weight: 800;
 }
 
 .navbar-mobile .getstarted,
@@ -444,7 +454,7 @@ h6 {
 .list_nav{
   display: block;
   /* background-color: blue; */
-  padding-top: 16vh;
+  padding-top: 6vh;
 }
 .list_nav li a{
   display: block;
@@ -488,6 +498,10 @@ h6 {
   display: block;
 }
 
+@media only screen and (max-width: 450px) {
+  .navbar-mobile ul {
+  max-width: 100%;
+}}
 /* .navbar-mobile .dropdown .dropdown-active > .navbar .dropdown>.dropdown-active{
   display: block;
 } */
