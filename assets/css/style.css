@@ -79,14 +79,14 @@ h6 {
 #header {
   z-index: 997;
   transition: all 0.5s;
-  padding: 22px 0;
+  padding: 10px 0;
   background: #000000;
-  width: 100vw;
+  width: 99.98vw;
 }
 
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 12px 0;
+  /* padding: 12px 0; */
 }
 
 #header .logo h1 {
@@ -117,6 +117,7 @@ h6 {
   position: relative;
   background-color: #333;
   overflow: hidden;
+  height: 8vh;
 }
 
 /* Style the links inside the navigation bar */
@@ -124,7 +125,7 @@ h6 {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 17px;
 }
@@ -156,18 +157,34 @@ h6 {
 }
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
   .topnav a, .topnav-right {
     float: none;
     display: block;
   }
 
   .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 10px;
+    left: 50%;
     transform: none;
   }
+   .mobile-nav-toggle.bi-x{
+    position: relative;
+    left: 1px;
+  }  
+}
+@media only screen and (max-width: 992px) and (min-width: 600px)  {
+ .mobile-nav-toggle{
+  position: relative;
+  left: -35px;
+ }
+
+ .mobile-nav-toggle.bi-x{
+  position: relative;
+  left: none;
+  top: none;
+ }
 }
 
 /*--------------------------------------------------------------
@@ -176,7 +193,6 @@ h6 {
 /**
 * Desktop Navigation 
 */
-
 .left-menu-container {
   float: left;
 }
@@ -207,6 +223,16 @@ h6 {
   list-style: none;
   align-items: center;
 }
+/* For desktop, display hidden the three nav item*/
+.list_nav{
+  display: none;
+  /* background-color: blue; */
+}
+.list_nav li a{
+  display: block;
+  /* background-color: blue; */
+  /* font-weight: 800; */
+}
 
 .navbar li {
   position: relative;
@@ -217,7 +243,7 @@ h6 {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  padding: 10px 30px 30px 30px;
+  padding: 15px 30px 30px 30px;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
@@ -340,7 +366,15 @@ h6 {
   left: 100%;
   visibility: visible;
 }
-
+.mobile-nav-toggle {
+  /* color: #222222; */
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
@@ -361,13 +395,22 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
+  position: fixed;
+  top: 12px;
+  left: 12px;
 }
 
 .mobile-nav-toggle.bi-x {
   color: #fff;
+  /* display: grid; /for make the class list disapear due to display of the nav item*/
+  display: grid;
 }
 
 @media (max-width: 991px) {
+  #header {
+    padding: 30px 0;
+  }
+
   .mobile-nav-toggle {
     display: block;
   }
@@ -375,7 +418,7 @@ h6 {
   .navbar ul {
     display: none;
   }
-}
+  /* For mobile, display back the three nav item*/
 
 .navbar-mobile {
   position: fixed;
@@ -386,27 +429,29 @@ h6 {
   bottom: 0;
   background: rgba(9, 9, 9, 0.9);
   transition: 0.3s;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 12px;
+  left: 12px;
 }
 
 .navbar-mobile ul {
+  padding-bottom: 100px;
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  max-width: 50%;
+  top: 56px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 0px;
   background-color: #fff;
   overflow-y: auto;
-  transition: 0.3s;
+  transition: 1s linear;
 }
 
 .navbar-mobile a,
@@ -414,17 +459,33 @@ h6 {
   padding: 10px 20px;
   font-size: 15px;
   color: #222222;
+  font-weight: 400;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #3498db;
+  color:black;
+  font: bold;
+  font-weight: 800;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+}
+
+.list_nav{
+  display: block;
+  /* background-color: blue; */
+  padding-top: 6vh;
+}
+.list_nav li a{
+  display: block;
+  /* background-color: blue; */
+  font-weight: 400;
+}
+
 }
 
 .navbar-mobile .dropdown ul {
@@ -461,13 +522,21 @@ h6 {
   display: block;
 }
 
+@media only screen and (max-width: 576px) {
+  .navbar-mobile ul {
+  max-width: 100%;
+}}
+/* .navbar-mobile .dropdown .dropdown-active > .navbar .dropdown>.dropdown-active{
+  display: block;
+} */
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  margin-top: 70px;
+  margin-top: 55px;
   background-color: #000000;
   text-align: center;
   justify-content: center;
