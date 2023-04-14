@@ -672,6 +672,10 @@ section {
   background-color: #f7fbfe;
 }
 
+.section-black {
+  background-color: #000000;
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -1444,6 +1448,102 @@ section {
 } */
 
 /*--------------------------------------------------------------
+# features-new
+--------------------------------------------------------------*/
+.features-new .section{
+  background-color: #000000;
+}
+
+.features-new .description{
+  color: #ffffff;
+}
+
+.features-new .nav-tabs {
+  border: 0;
+}
+
+.features-new .nav-link {
+  border: 1px solid #b5ccdb;
+  padding: 15px;
+  transition: 0.3s;
+  color: #15222b;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-new .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.features-new .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.features-new .nav-link:hover {
+  background: #000000;
+  color: #fff;
+  border-color: #000000;
+}
+
+.features-new .nav-link.active {
+  background: #000000;
+  color: #fff;
+  border-color: #000000;
+}
+
+
+@media (max-width: 768px) {
+  .features-new .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .features-new .nav-link {
+    padding: 15px;
+  }
+
+  .features-new .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.features-new .tab-content {
+  margin-top: 30px;
+}
+
+.features-new .tab-pane h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.features-new .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-new .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.features-new .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #ff4a17;
+}
+
+.features-new .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
 .features .icon-box {
@@ -1528,7 +1628,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 30px 30px 30px 60px;
+  padding: 30px 30px 30px 150px;
   margin: 30px 15px;
   min-height: 200px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
@@ -1537,7 +1637,7 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 20px;
+  width: 180px;
   border-radius: 10px;
   border: 6px solid #fff;
   position: absolute;
@@ -1577,8 +1677,9 @@ section {
 }
 
 .testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 15px auto 15px auto;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
 }
 
 .testimonials .portfolio-info {
@@ -1833,149 +1934,179 @@ section {
   text-align: justify;
 }
 
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team {
-  background-color: #000000;
-  height:100vh;
-}
-
-.team .section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.team .section-title hr {
-  width: 500vw;
-  text-align: left;
-  border: 1px solid #ffffff;
-  opacity: 1;
-  right: 0;
-  z-index: 2;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-left: -200px;
-}
-
-.team .section-title h1 {
-  font-size: 50px;
-  font-weight: 600;
-   text-align: center;
-  text-transform: uppercase;
   position: relative;
-  color: #ffffff;
-  margin-bottom: 30px;
 }
 
+.team .container {
+  position: relative;
+  z-index: 10;
+}
 
 .team .member {
-  margin-top: 10px;
-  /* margin-bottom: 0px; */
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  /* background: #fff; */
-  height: 60%;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member-img {
+  margin-bottom: 80px;
   position: relative;
+}
+
+.team .member .pic {
   overflow: hidden;
-  transition: opacity 0.3s ease;
-  height: 160px; /* set a fixed height for all images */
 }
-
-.team .member .member-img img {
-  width: 100%;
-  height: auto;
-}
-
-.team .member:hover .member-img {
-  opacity: 0.3;
-}
-
 
 .team .member .member-info {
-  margin-bottom: 50%;
-  background: white;
-  padding: 30px 15px;
-  transition: transform 0.3s ease;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 15px;
+  color: #15222b;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.5s;
 }
 
-
-.team .member:hover .member-info {
-  transform: translateY(-100%);
-}
-
-
-.team .member .member-info h4 {
+.team .member h4 {
   font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 23px;
-  color: #222222;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #15222b;
+  position: relative;
+  padding-bottom: 10px;
 }
 
-@media (max-width: 767px) {
-  .team {
-    height: auto;
-  }
-
-  .team .section-title h1{
-    font-size: 35px;
-  }
-
-  .team .member {
-    height: auto;
-    margin-top: 20px;
-    box-shadow: none;
-  }
-
-  .team .member .member-img {
-    height: 200px;
-  }
-
-  .team .member:hover .member-img {
-    opacity: 1;
-  }
-
-  .team .member .member-info {
-    margin-bottom: 0;
-    padding: 15px;
-  }
-
-  /* .team .member:hover .member-info {
-    transform: translateY(0);
-  } */
-
-  .team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #222222;
-}
+.team .member h4::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #7fa5c0;
+  bottom: 0;
+  left: 0;
 }
 
-
-
-.team .member .member-info span {
+.team .member span {
+  font-style: italic;
   display: block;
   font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
 }
 
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
+.team .member .social {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
 }
 
-.team .member:hover .social {
-  opacity: 1;
+.team .member .social a {
+  transition: color 0.3s;
+  color: #477392;
 }
+
+.team .member .social a:hover {
+  color: #ff4a17;
+}
+
+.team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+  .team .member {
+    margin-bottom: 110px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# services-brand
+--------------------------------------------------------------*/
+.services-brand .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background: #1a1a1a;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ffffff1c;
+  z-index: 1;
+}
+
+.services-brand .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #ffffff43;
+  right: -60px;
+  top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.services-brand .icon-box:hover::before {
+  background: #ffffff;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+}
+
+.services-brand .icon {
+  margin: 0 auto 30px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: fit-content;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-brand .icon i {
+  font-size: 70px;
+  line-height: 1;
+  color: #fff;
+}
+
+.services-brand .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services-brand .title a {
+  color: #d2d2d2;
+}
+
+.services-brand .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: justify;
+  color: #d2d2d2;
+}
+
+.services-brand .icon-box:hover .title a,
+.services-brand .icon-box:hover .description {
+  color: #444444;
+}
+
+.services-brand .icon-box:hover .icon {
+  background: transparent;
+}
+
+.services-brand .icon-box:hover .icon i {
+  color: #444444;
+}
+
 
 /*--------------------------------------------------------------
 # Pricing
@@ -2130,7 +2261,7 @@ section {
   z-index: 2;
   margin-top: 50px;
   margin-bottom: 30px;
-  margin-left: -200px;
+  margin-left: -300px;
 }
 
 .contact .contact-about h3 {
