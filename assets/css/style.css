@@ -1204,6 +1204,22 @@ section {
   }
 }
 
+.icon-box .description-hover {
+  display: none;
+  list-style-type: disc;
+}
+
+.icon-box.hovered .description {
+  display: none;
+}
+
+.icon-box.hovered .description-hover {
+  display: block;
+}
+
+
+
+
 @media (min-width: 767px) {
   .about .img-fluid {
     width: 100vw;
@@ -1264,9 +1280,34 @@ section {
     line-height: 22px;
     text-align: justify;
   }
+
+  .icon-box .description-hover {
+    display: none;
+    list-style-type: disc;
+  }
+  
+  .icon-box:hover .description {
+    display: none;
+  }
+  
+  .icon-box:hover .description-hover {
+    display: block;
+  }
 }
 
 @media (max-width: 567px) {
+  .icon-box .description-hover {
+    display: none;
+    list-style-type: disc;
+  }
+  
+  .icon-box:hover .description {
+    display: none;
+  }
+  
+  .icon-box:hover .description-hover {
+    display: block;
+  }
 
 }
 

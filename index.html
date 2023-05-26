@@ -142,8 +142,16 @@
               sampling, influencer marketing, social media campaigns, events, and sponsorships. The
               objective is to create an immersive experience that connects consumers with the brand,
               generates interest, and encourages them to take action.</p>
-      </div>
+            <ul class="description-hover">
+              <li>Goal: Strong emotional connection with consumers.</li>
+              <li>Targets existing and new customers.</li>
+              <li>Amplifies impact through channels like social media.</li>
+              <li>Success measured through engagement, reach, sales, perception.</li>
+            </ul>
+          </div>
         </div>
+        
+        
 
         <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-5">
           <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
@@ -152,7 +160,14 @@
             <p class="description">We organize and manage various types of events such as but not limited to conferences,
               product launches and campaigns. Event planning requires strong organizational and
               communication skills to generate media coverage and increase brand awareness. We cover all
-              your worries from creativity, solving problems and adapting to changing circumstances.</p> 
+              your worries from creativity, solving problems and adapting to changing circumstances.</p>
+              <ul class="description-hover">
+                <li>Event planning involves organizing and coordinating all aspects of an event.</li>
+                <li>It aims to create a seamless and enjoyable experience for attendees.</li>
+                <li>It includes tasks such as venue selection, logistics management, and vendor coordination.</li>
+                <li>Event planning sets objectives, targets specific audiences, and manages budgets.</li>
+                <li>It involves creating timelines, schedules and handling event promotion.</li>
+              </ul> 
             </div>
         </div>
 
@@ -165,6 +180,12 @@
               tap into a bigger audience base. Collaboration can lead to better outcomes for businesses. By
               working together, teams can achieve more than they could individually and create a positive,
               collaborative culture that fosters innovation, productivity, and engagement.</p>
+              <ul class="description-hover">
+                <li>Influencers and Collaboration outreach seeks partnerships with either brands or individuals to promote your brands or individuals to promote your brand or product.</li>
+                <li>They assist in expanding brand visibility & reach new audiences</li>
+                <li>Benefits include increased brand awareness, credibility & access to a wider target market</li>
+                <li>Success is measured through metrics like engagement, reach & sales</li>
+              </ul> 
           </div>
         </div>
 
@@ -177,6 +198,12 @@
               this through a number of strategies, including engaging in regular outreach, developing key
               messages, press releases and much more. Our goal is to ensure your brand achieves the public
               relations objective and generates positive coverage</p> 
+              <ul class="description-hover">
+                <li>Media relations aim is to generate positive publicity & coverage for a brand</li>
+                <li>Involves strategic communication & writing press releases for the media</li>
+                <li>Important for crises management & shaping public perception of your brand</li>
+                <li>Success is measured through media coverage, relationship and effective messaging</li>
+              </ul>
         </div>
         </div>
 
@@ -498,6 +525,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  // Add hover class on touch devices
+const iconBox = document.querySelector('.icon-box');
+
+iconBox.addEventListener('touchstart', function() {
+  iconBox.classList.add('hovered');
+});
+
+iconBox.addEventListener('touchend', function() {
+  iconBox.classList.remove('hovered');
+}); </script>
+
 
 </body>
 
