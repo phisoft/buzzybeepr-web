@@ -243,7 +243,7 @@ h6 {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  padding: 15px 30px 30px 30px;
+  padding: 15px 30px 15px 30px;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
@@ -1902,6 +1902,7 @@ section {
   transition: all 0.3s ease-in-out;
   border: 1px solid #ffffff1c;
   z-index: 1;
+  width: 100%;
 }
 
 .services-brand .icon-box::before {
@@ -1973,6 +1974,36 @@ section {
 
 .services-brand .icon-box:hover .icon i {
   color: #444444;
+}
+.services-brand .icon-box:hover {
+  height: auto;
+}
+
+.services-brand .icon-box:hover .description-hover{
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .services-brand .icon-box {
+    width: 100%;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .services-brand .icon-box {
+    width: 100%;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .services-brand .icon-box {
+    height: 460px;
+  }
+}
+@media screen and (min-width: 1440px){
+  .services-brand .icon-box {
+    height: 410px;
+  }
 }
 
 
