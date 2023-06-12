@@ -917,6 +917,14 @@ section {
   text-align: justify;
 }
 
+.image-description {
+  position: absolute;
+  bottom: -60px; /* Adjust this value to position the description vertically */
+  left: -20px;
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
  .about .content p:last-child {
   font-size: 14px;
@@ -937,6 +945,23 @@ section {
   text-transform: uppercase;
   border: 1.5px solid #000000;
 }
+
+.about .image-description {
+  bottom: 0px; /* Adjust this value to position the description vertically */
+  left: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#director .img-fluid {
+  padding-bottom: 0px;
+}
+
+.col-lg-6 .director-description {
+  padding-top: 40px;
+}
+
+
 }
 
 @media (max-width: 992px) {
@@ -955,8 +980,20 @@ section {
     text-align: center;
   }
 
-}
+  .about .image-description {
+    position: absolute;
+    bottom: -60px; /* Adjust this value to position the description vertically */
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    
+  }   
 
+  .col-lg-6 .director-description {
+    padding-top: 40px;
+  }
+  
+}
 
 /*--------------------------------------------------------------
 # Counts
