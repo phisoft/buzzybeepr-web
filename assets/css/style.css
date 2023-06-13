@@ -964,10 +964,6 @@ margin-top: -110px;
 #director .img-fluid {
   padding-bottom: 0px;
 }
-
-
-
-
 }
 
 @media (max-width: 992px) {
@@ -2050,7 +2046,61 @@ margin-top: -110px;
   }
 }
 
+/*--------------------------------------------------------------
+# Case Study
+--------------------------------------------------------------*/
+.study .section-title {
+  padding-bottom: 10px;
+}
 
+.study .section-content {
+  text-align: left;
+}
+
+.study .column-A {
+  text-align: left;
+}
+
+.study .img-fluid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.study ul i {
+  font-size: 20px;
+  padding-right: 15px;
+  }
+
+  .study .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .study .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .study .flex-item {
+      flex-basis: calc(33.33% - 100px); /* Adjust as needed */
+      margin-right: 50px;
+    }
+  }
+  
+
+  @media (max-width: 968px) {
+    .study span {
+      margin: 0 0 10px 5px;
+    }
+  }
+
+  @media (max-width: 565px) {
+    .study .column-A {
+      line-height: 1.2;
+      margin-bottom:10px;
+    }
+  }
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
