@@ -926,6 +926,13 @@ section {
   justify-content: center;
   
 }
+.about .image-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  
+}
 
 .about .custom-column{
 margin-top: -110px; 
@@ -935,6 +942,11 @@ margin-top: -110px;
  margin-top: 25px;
 }
 
+@media(min-width:992px){
+  .about .image-center{
+    margin-top: -110px; 
+  }
+}
 @media (max-width: 768px) {
  .about .content p:last-child {
   font-size: 14px;
