@@ -929,15 +929,10 @@ section {
 
 .about .custom-column{
 margin-top: -110px; 
-
 }
 
-.image-description {
-  position: absolute;
-  bottom: -60px; /* Adjust this value to position the description vertically */
-  left: -20px;
-  width: 100%;
-  text-align: center;
+#director .director-description {
+ margin-top: 25px;
 }
 
 @media (max-width: 768px) {
@@ -961,28 +956,16 @@ margin-top: -110px;
   border: 1.5px solid #000000;
 }
 
-.about .col-lg-6 .image-description {
-  position: absolute;
-  bottom: -60px; /* Adjust this value to position the description vertically */
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  font-size: small; /* Adjust this value to change the font size */
-}
-
 .about .image-right {
   text-align: center;
   font-size: 12px;
 }
 
-
 #director .img-fluid {
   padding-bottom: 0px;
 }
 
-.col-lg-6 .director-description {
-  padding-top: 40px;
-}
+
 
 
 }
@@ -1016,10 +999,6 @@ margin-top: -110px;
     font-size: small;
     
   }   
-
-  .col-lg-6 .director-description {
-    padding-top: 40px;
-  }
 
 }
 
