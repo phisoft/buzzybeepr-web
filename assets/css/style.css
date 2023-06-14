@@ -2117,12 +2117,22 @@ margin-top: -110px;
     .study span {
       margin: 0 0 10px 5px;
     }
+
+    .study .flex-container {
+      margin-bottom: -50px;
+    }
   }
 
   @media (max-width: 565px) {
     .study .column-A {
-      line-height: 1.2;
       margin-bottom:10px;
+    }
+
+    .study .column-A .campaign-quote {
+      line-height: 1.2;
+    }
+    .study .flex-container {
+      margin-bottom: -70px;
     }
   }
 /*--------------------------------------------------------------
