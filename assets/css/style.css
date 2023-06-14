@@ -2074,7 +2074,7 @@ margin-top: -110px;
 }
 
 .study .img-fluid {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
@@ -2085,7 +2085,19 @@ margin-top: -110px;
 
   .study .flex-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .study .flex-item {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .study .flex-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   
   @media (min-width: 768px) {
@@ -2105,12 +2117,22 @@ margin-top: -110px;
     .study span {
       margin: 0 0 10px 5px;
     }
+
+    .study .flex-container {
+      margin-bottom: -50px;
+    }
   }
 
   @media (max-width: 565px) {
     .study .column-A {
-      line-height: 1.2;
       margin-bottom:10px;
+    }
+
+    .study .column-A .campaign-quote {
+      line-height: 1.2;
+    }
+    .study .flex-container {
+      margin-bottom: -70px;
     }
   }
 /*--------------------------------------------------------------
