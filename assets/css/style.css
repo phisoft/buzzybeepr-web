@@ -61,7 +61,7 @@ h6 {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*--------------------------------------------------------------
@@ -2934,7 +2934,7 @@ margin-top: -110px;
  .list-c-study .list-content-cs .img-fcs img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   /* padding-left: 20px; */
  }
 
