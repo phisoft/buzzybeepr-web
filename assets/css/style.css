@@ -61,7 +61,7 @@ h6 {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*--------------------------------------------------------------
@@ -2907,46 +2907,51 @@ margin-top: -110px;
 }
 
 
-/* Case Study List Design */
- .feature-c-study{
-  height: 100vh;
+/* List Case Study Design */
+ .list-c-study{
+  /* height: 100vh; */
+  height: auto;
+  margin-top: 5vh;
  }
 
- .features-c-study .section-title h1{
+ .list-c-study .section-title h1{
   text-align: center;
   margin-bottom: 30px;
   padding-top: 30px;
  }
 
- .features-c-study .features-content-cs {
+ .list-c-study .list-content-cs {
   /* background-color: blue; */
   display: flex;
-  margin-bottom: 20px;
-  background-color: rgb(195, 194, 194);
+  margin-bottom: 50px;
+  background-color: #000000;
+  color: white;
  }
 
- .features-c-study .features-content-cs .img-fcs{
+ .list-c-study .list-content-cs .img-fcs{
   width: 30%;
  }
- .features-c-study .features-content-cs .img-fcs img{
+ .list-c-study .list-content-cs .img-fcs img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* padding-left: 20px; */
  }
 
- .features-c-study .features-content-cs .title-c-study{
+ .list-c-study .list-content-cs .title-c-study{
   width: 50%;
   padding-left: 50px;
   padding-right: 30px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  text-align: justify;
  }
- .features-c-study .features-content-cs .title-c-study h2{
+ .list-c-study .list-content-cs .title-c-study h2{
   text-transform: uppercase;
  }
 
- .features-c-study .features-content-cs .button-c-study{
+ .list-c-study .list-content-cs .button-c-study{
   width: 20%;
   display: flex;
   text-align: center;
@@ -2954,26 +2959,69 @@ margin-top: -110px;
   justify-content: center;
  }
  
- .signup-button {
+ .goto-button {
   display: inline-block;
   padding: 10px 20px;
-  /* background-color:#000000;; */
-  color: #000000;
+  background-color:#000000;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border-radius: 20px; 
-  border: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   cursor: pointer;
 }
 
-.signup-button:hover {
-  background: #000000;
-  color: #ffffff;
+.goto-button:hover {
+  background: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 
 
+#hero .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 50px;
+  margin-top: 150px;
+  transition: 0.5s;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
 
+#hero .btn-get-started:hover {
+  background: #ffffff;
+  color: #000000;
+}
 
+@media (max-width: 992px){
+  .list-c-study .list-content-cs {
+    flex-direction: column;
+  }
+
+  .list-c-study .list-content-cs .img-fcs{
+    width: 100%;
+    /* padding-right: 20px; */
+  }
+
+  .list-c-study .list-content-cs .title-c-study{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+   }
+  
+  .list-c-study .list-content-cs .title-c-study p{
+    margin-top: 10px;
+  }
+    
+  .list-c-study .list-content-cs .button-c-study{
+    width: 100%;
+    margin: 20px 0px 60px 0px;
+  }
+
+}
