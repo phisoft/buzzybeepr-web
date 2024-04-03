@@ -242,6 +242,29 @@
     }
   });
 
+// Function to include html
+  function includeHTML(containerId, source, initializeFunction) {
+    const container = document.getElementById(containerId);
+
+    if (container) {
+      fetch(source)
+          .then(response => response.text())
+          .then(html => {
+            container.innerHTML = html;
+            if (initializeFunction && typeof initializeFunction === 'function') {
+              initializeFunction();
+            }
+          })
+          .catch(error => console.error(`Error fetching ${source}:`, error));
+    }
+  }
+
+  function includeContact() {
+    includeHTML("contact-container", "contact.html");
+  }
+
+  includeContact();
+
   /**
    * Animation on scroll
    */
