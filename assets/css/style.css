@@ -1,4 +1,16 @@
 /*--------------------------------------------------------------
+# Animal Adoption
+--------------------------------------------------------------*/
+.adoption-title h1 {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -646,6 +658,142 @@ h6 {
 
 @media (max-width: 575px) {
   #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#about {
+    position: relative;
+    background-color: #D3D9E5; /* Matches the color of the wave */
+    margin-top: -5px; /* To overlap a bit and remove any gap */
+    padding-top: 20px; /* Add padding if necessary */
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/img/animaladoption.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  border-radius: 0 0 180px 180px;
+}
+
+#hero2 h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+#hero2 h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  font-size: 18px;
+  letter-spacing: auto;
+  font-weight: 300;
+}
+
+#hero2 .btn-get-started {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 50px;
+  margin-top: 150px;
+  transition: 0.5s;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+#hero2 .btn-get-started:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+#hero2 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #hero2 {
+    height: 100vh;
+  }
+
+  #hero2 .animated {
+    animation: none;
+  }
+
+  #hero2 .hero-img {
+    text-align: center;
+  }
+
+  #hero2 .hero-img img {
+    width: 50%;
+  }
+
+  #hero2 .btn-get-started {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    /* padding: 15px 50px; */
+    padding: 10px 38px;
+    margin-top: 150px;
+    transition: 0.5s;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero2 {
+    margin-top: 20px;
+  }
+
+  #hero2 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero2 .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero2 .hero-img img {
     width: 80%;
   }
 }
