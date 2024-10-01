@@ -10,6 +10,33 @@
   margin-bottom: 30px;
 }
 
+.adoption-box {
+  background-color: #FFFFFF70;
+  padding: 15px 30px;
+  border-radius: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.adoption-box p {
+  font-size: 18px;
+  text-align: center;
+  color: #2A3449;
+  padding: 20px 40px;
+}
+
+.adoption-footer {
+  color: #2A3449;
+  padding: 25px;
+  text-align: center;
+
+}
+
+.adopt-footer {
+  color: #ffffff;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -693,7 +720,6 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center; 
-  border-radius: 0 0 180px 180px;
 }
 
 #hero2 h1 {
