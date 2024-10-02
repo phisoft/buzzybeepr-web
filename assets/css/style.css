@@ -37,6 +37,60 @@
   text-align: center;
 }
 
+.full-width-img {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  margin-bottom: 30px;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.countdown-box div {
+  background-color: #252525;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.countdown-box h1 {
+  font-weight: bolder;
+  display: block;
+  font-size: 50px;
+  letter-spacing: 5px;
+  padding-top: 10px;
+}
+
+.countdown-box-text {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #252525;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.countdown-box-text div {
+  padding: 10px 20px;
+  text-align: center;
+  width: 200px;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
