@@ -16,6 +16,7 @@
   border-radius: 20px;
   width: 80%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .adoption-box p {
@@ -29,7 +30,13 @@
   color: #2A3449;
   padding: 25px;
   text-align: center;
+  font-weight: bolder;
+}
 
+.adoption-footer img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
 }
 
 .adopt-footer {
@@ -89,6 +96,48 @@
   padding: 10px 20px;
   text-align: center;
   width: 200px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  background-color: #2A344B;
+  color: #fff;
+  padding: 20px;
+  border-radius: 80px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 280px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #2A344B;
+  color: #fff;
+}
+
+.more-information {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.more-information p {
+  margin: 5px 0;
+}
+
+.more-information img {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
 
 /*--------------------------------------------------------------
