@@ -40,16 +40,45 @@
   height: 30px;
 }
 
+@media (max-width: 1024px) {
+  .adoption-title h1 {
+    font-size: 30px;
+  }
+ 
+}
+
 @media (max-width: 768px) {
+  .adoption-title h1 {
+    font-size: 25px;
+  }
 
   #adoption-footer-id {
     padding: 20px;
   }
 
   .adoption-box {
+    padding: 15px;
     width: 100%;
   }
+
+  .adoption-box p {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+
+  .adoption-footer {
+    padding: 0 0 25px 0;
+  }
 }
+
+@media (max-width: 768px) {
+  .adoption-box p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
 
 #img-phone {
   margin-right: 30px;
