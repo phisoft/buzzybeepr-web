@@ -1,6 +1,38 @@
 /*--------------------------------------------------------------
 # Animal Adoption
 --------------------------------------------------------------*/
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.left-title {
+  padding: 40px;
+}
+
+.right-title {
+  width: 50%;
+}
+
+.left-title h1 {
+  font-size: 180px;
+  border-radius: 30px;
+  color: #000000;
+  font-family: "Playwrite IS", cursive;
+}
+
+.right-title h1 {
+  font-size: 50px;
+  text-align: left;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: "Playwrite IS", cursive;
+}
+
 .adoption-title h1 {
   font-size: 40px;
   font-weight: 500;
@@ -40,16 +72,131 @@
   height: 30px;
 }
 
+@media (max-width: 1200px) {  
+  .right-title {
+    width: 40%;
+  }
+  
+  .left-title h1 {
+    font-size: 150px;
+  }
+  
+  .right-title h1 {
+    font-size: 40px;
+  }
+  
+}
+
+@media (max-width: 1100px) {  
+  .right-title {
+    width: 50%;
+  }
+  
+  .left-title h1 {
+    font-size: 140px;
+  }
+  
+  .right-title h1 {
+    font-size: 40px;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .adoption-title h1 {
+    font-size: 30px;
+  }
+
+  .right-title {
+    width: 50%;
+  }
+  
+  .left-title h1 {
+    font-size: 110px;
+  }
+  
+  .right-title h1 {
+    font-size: 32px;
+  }
+ 
+}
+
 @media (max-width: 768px) {
+  .adoption-title h1 {
+    font-size: 25px;
+  }
 
   #adoption-footer-id {
     padding: 20px;
   }
 
   .adoption-box {
+    padding: 15px;
     width: 100%;
   }
+
+  .adoption-box p {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+
+  .adoption-footer {
+    padding: 0 0 25px 0;
+  }
+
+  .left-title {
+    padding: 20px;
+  }
+
+  .right-title {
+    width: 60%;
+  }
+  
+  .left-title h1 {
+    font-size: 100px;
+  }
+  
+  .right-title h1 {
+    font-size: 28px;
+  }
 }
+
+@media (max-width: 576px) {
+  .left-title {
+    padding: 15px;
+  }
+
+  .right-title {
+    width: 60%;
+  }
+  
+  .left-title h1 {
+    font-size: 70px;
+  }
+  
+  .right-title h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left-title {
+    padding: 10px;
+  }
+
+  .right-title {
+    width: 60%;
+  }
+  
+  .left-title h1 {
+    font-size: 50px;
+  }
+  
+  .right-title h1 {
+    font-size: 16px;
+  }
+}
+
 
 #img-phone {
   margin-right: 30px;
@@ -835,7 +982,7 @@ h6 {
   background-image: url("/assets/img/animaladoption.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -884,6 +1031,18 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+@media (max-width: 1400px) {
+  #hero2 {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  #hero2 {
+    height: 70vh;
+  }
+}
+
 @media (max-width: 991px) {
 
   #hero2 {
@@ -921,7 +1080,7 @@ h6 {
 @media (max-width: 768px) {
 
   #hero2 {
-    height: 33vh;
+    height: 40vh;
   }
   
   #hero2 h1 {
@@ -943,6 +1102,16 @@ h6 {
 @media (max-width: 575px) {
   #hero2 .hero-img img {
     width: 80%;
+  }
+
+  #hero2 {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero2 {
+    height: 20vh;
   }
 }
 
