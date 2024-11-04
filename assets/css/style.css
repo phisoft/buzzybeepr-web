@@ -21,7 +21,7 @@
   font-size: 180px;
   border-radius: 30px;
   color: #000000;
-  font-family: "Playwrite IS", cursive;
+  font-family: "Mulish", sans-serif;
 }
 
 .right-title h1 {
@@ -30,7 +30,7 @@
   color: #000000;
   font-weight: 500;
   line-height: 1.2;
-  font-family: "Playwrite IS", cursive;
+  font-family: "Mulish", sans-serif;
 }
 
 .adoption-title h1 {
@@ -308,7 +308,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Mulish", sans-serif;
   color: #444444;
 }
 
@@ -328,7 +328,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -386,7 +386,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 10px 0;
-  background: #000000;
+  background: #223031;
   width: 99.98vw;
 }
 
@@ -843,7 +843,7 @@ h6 {
   width: 100%;
   height: 100vh;
   margin-top: 55px;
-  background-color: #000000;
+  background-color: #223031;
   text-align: center;
   justify-content: center;
 }
@@ -856,6 +856,7 @@ h6 {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   letter-spacing: 10px;
+  font-family: "Mulish", sans-serif;
 }
 
 #hero h2 {
@@ -865,10 +866,11 @@ h6 {
   font-size: 18px;
   letter-spacing: auto;
   font-weight: 300;
+  font-family: "Mulish", sans-serif;
 }
 
 #hero .btn-get-started {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -914,7 +916,7 @@ h6 {
   }
 
   #hero .btn-get-started {
-    font-family: 'Libre Franklin', sans-serif;
+      font-family: "Mulish", sans-serif;
     font-weight: 300;
     font-size: 13px;
     text-transform: uppercase;
@@ -968,9 +970,9 @@ h6 {
 
 #about {
     position: relative;
-    background-color: #D3D9E5; /* Matches the color of the wave */
-    margin-top: -5px; /* To overlap a bit and remove any gap */
-    padding-top: 20px; /* Add padding if necessary */
+    background-color: #E6DBC9;
+    margin-top: -5px;
+    padding-top: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1009,7 +1011,7 @@ h6 {
 }
 
 #hero2 .btn-get-started {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -1062,7 +1064,7 @@ h6 {
   }
 
   #hero2 .btn-get-started {
-    font-family: 'Libre Franklin', sans-serif;
+      font-family: "Mulish", sans-serif;
     font-weight: 300;
     font-size: 13px;
     text-transform: uppercase;
@@ -1138,7 +1140,7 @@ section {
 }
 
 .section-black {
-  background-color: #000000;
+  background-color: #223031;
 }
 
 .section-title {
@@ -1354,7 +1356,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1389,7 +1391,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  object-fit: cover;
 }
 .about .image-center{
   display: flex;
@@ -1403,16 +1405,20 @@ section {
 margin-top: -110px; 
 }
 
+#director {
+  background: #E6DBC9;
+}
+
 #director .content {
   display: flex;
   align-items: center;
 }
 
-#director .col-lg-6 {
+/* #director .col-lg-6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 #director .director-description {
  margin-top: -10px;
@@ -1429,7 +1435,7 @@ margin-top: -110px;
 }
 
 .about .content .btn-learn-more {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 1px;
@@ -1447,6 +1453,7 @@ margin-top: -110px;
 .about .image-right {
   text-align: center;
   font-size: 12px;
+  height: 200px;
 }
 
 #director .img-fluid {
@@ -1529,7 +1536,7 @@ margin-top: -110px;
 .counts .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-size: 14px;
   color: #484848;
 }
@@ -1540,7 +1547,7 @@ margin-top: -110px;
   margin-top: 20px;
   color: #484848;
   font-size: 15px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1624,7 +1631,7 @@ margin-top: -110px;
   text-align: left;
   font-weight: 700;
   font-size: 25px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   margin-top: 40px;
   margin-bottom: 10px;
   margin-left: 40px;
@@ -2670,7 +2677,7 @@ margin-top: -110px;
   font-size: 42px;
   color: #3498db;
   font-weight: 500;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -2723,7 +2730,7 @@ margin-top: -110px;
   color: #3498db;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -2770,7 +2777,7 @@ margin-top: -110px;
   line-height: 26px;
   font-weight: 500;
   margin: 0 0 10px 32px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 .faq .faq-item p {
@@ -2785,7 +2792,7 @@ margin-top: -110px;
 }
 .contact .section-title h1{
   color: white;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 .contact .section-title hr {
@@ -2814,7 +2821,7 @@ margin-top: -110px;
   font-size: 14px;
   line-height: 24px;
   padding: 10px 10px 0 0;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   text-align: justify;
   color: #a1a0a0;
 }
@@ -2920,7 +2927,7 @@ margin-top: -110px;
 }
 
 .contact .php-email-form .form-control {
-  background: black;
+  background: #223031;
   color: white;
   border-color: rgb(255, 255, 255);
 }
@@ -2939,7 +2946,7 @@ margin-top: -110px;
 }
 
 .contact .php-email-form button[type=submit] {
-  font-family: 'Libre Franklin', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
@@ -2947,7 +2954,7 @@ margin-top: -110px;
   padding: 12px 32px;
   transition: 0.3s;
   line-height: 1;
-  background: black;
+  background: #223031;
   color: white;
   animation-delay: 0.8s;
   margin-top: 15px;
@@ -3046,7 +3053,7 @@ margin-top: -110px;
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000000;
+  background: #223031;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 30px 0;
   color: #fffbfb;
@@ -3259,18 +3266,18 @@ margin-top: -110px;
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 25px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   color: white;
 }
 
 
 .try .content p{
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   color: white;
 }
 
 .try .btn-get-started {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -3326,16 +3333,16 @@ margin-top: -110px;
 .more-services  .content2 h4{
   font-weight: 700;
   font-size: 25px;
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   color: rgb(0, 0, 0);
 }
 
 .more-services  .content2 p{
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 .more-services  .btn-get-started {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -3376,17 +3383,17 @@ margin-top: -110px;
   .more-services  .content2 h4{
     font-weight: 700;
     font-size: 20px;
-    font-family: 'Libre Franklin', sans-serif;
+      font-family: "Mulish", sans-serif;
     color: rgb(0, 0, 0);
   }
   
   .more-services  .content2 p{
-    font-family: 'Libre Franklin', sans-serif;
+      font-family: "Mulish", sans-serif;
     font-size: 15px;
   }
   
   .more-services  .btn-get-started {
-    font-family: 'Libre Franklin', sans-serif;
+      font-family: "Mulish", sans-serif;
     font-weight: 300;
     font-size: 12px;
     text-transform: uppercase;
@@ -3471,7 +3478,7 @@ margin-top: -110px;
 
 
 #hero .btn-get-started {
-  font-family: 'Libre Franklin', sans-serif;
+    font-family: "Mulish", sans-serif;
   font-weight: 300;
   font-size: 15px;
   text-transform: uppercase;
@@ -3516,4 +3523,8 @@ margin-top: -110px;
     margin: 20px 0px 60px 0px;
   }
 
+}
+
+#contact {
+  background: #223031;
 }
