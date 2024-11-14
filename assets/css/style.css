@@ -1719,6 +1719,65 @@ margin-top: -110px;
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services-brand {
+  background-color: #f5f2ed;
+}
+
+.box {
+  border: 2px solid  rgba(0, 0, 0, 0.2); /* Semi-transparent border */
+  padding: 10px 0.5px;
+  background-color: transparent; 
+  text-align: center; /* Center the text */
+  margin: 2% auto;
+}
+
+.box img {
+  max-width: 30%;
+  height:auto; 
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .services-brand {
+    height: 200px; /* Reduced height for smaller screens */
+  }
+
+  .box {
+    padding: 15px 30px; /* Reduced padding */
+  }
+
+  .box h2 {
+    font-size: 32px; /* Smaller font for mobile */
+  }
+}
+
+.content-box {
+  background-color: #f5f2ed; 
+  padding: 20px;
+  border: 1px solid #D2B48C; 
+  text-align: left; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+}
+
+.box-title {
+  font-family: 'Georgia', serif; 
+  font-size: 20px;
+  font-weight: 600;
+  color: #000; 
+  margin-bottom: 10px; 
+  border-bottom: 1px solid #ddd; 
+  padding-bottom: 5px;
+}
+
+.description1 {
+  font-size: 14px;
+  color: #555; /* Lighter text for the description */
+  line-height: 1.8; /* Improve readability */
+  margin-top: 10px;
+}
+
+
 .image-container {
   text-align: center; 
 }
@@ -1729,7 +1788,13 @@ margin-top: -110px;
 }
 
 .img-fluid1 {
-  max-width: 45%; 
+  max-width: 50%; 
+  height: auto; 
+  margin-bottom: 30px; 
+}
+
+.img-fluid2 {
+  max-width: 80%; 
   height: auto; 
   margin-bottom: 30px; 
 }
