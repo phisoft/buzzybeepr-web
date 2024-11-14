@@ -1463,10 +1463,6 @@ section {
 margin-top: -110px; 
 }
 
-#director {
-  background: #223031;
-}
-
 .image-container1 {
   text-align: center; 
   background: #223031;
@@ -1554,22 +1550,45 @@ margin-top: -110px;
 
 }
 
+
 /*--------------------------------------------------------------
 # Director Section
 --------------------------------------------------------------*/
+#director {
+  background: #d1c9c0;
+}
+
+.about-director {
+  background-color: #d1c9c0; /* Light beige background */
+  padding: 60px 0;
+  text-align: center;
+}
+
 .image-container2 {
   text-align: center;
-  margin-bottom: 20px; 
+  margin-bottom: 25px; 
+}
+
+.line {
+  display: inline-block;
+  height: 2px; 
+  background-color: #fff; 
+  flex-grow: 2; /* Ensures the line takes up available space */
+  max-width: 600px; 
+}
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container2 img {
-  max-width: 30%; 
+  max-width: 25%;
   height: auto; 
-  margin-top: 10px; 
 }
 
 .image-container3 {
-  background: #f5f2ed; 
+  background: #f5f2ed;
   padding: 10px;
   display: inline-block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1578,31 +1597,33 @@ margin-top: -110px;
 
 .director-img {
   width: 100%;
-  max-width: 300px; 
-  border: 5px solid #fff; 
+  max-width: 250px; 
+  border: 5px solid #fff;
 }
 
 .director-name {
-  font-size: 22px; /* Slightly smaller */
+  font-size: 24px;
   font-weight: bold;
-  margin: 5px 0; /* Tighten spacing between name and title */
-  color: #fff;
+  color: #000;
+  margin: 10px 0 5px;
 }
 
 .director-title {
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
-  color: #ddd;
-  margin-bottom: 5px; /* Close the gap under the title */
+  color: #666;
+  margin-bottom: 10px;
 }
 
 .director-description {
   font-size: 14px;
-  line-height: 1.6; /* Adjust line spacing for better text flow */
-  color: #ddd;
+  line-height: 1.8;
+  color: #444;
   max-width: 90%;
-  margin: 0 auto; /* Center the text */
-  margin-top: 10px; /* Add a smaller gap above the description */
+}
+
+.row.content {
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
