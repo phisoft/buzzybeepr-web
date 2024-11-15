@@ -1603,11 +1603,11 @@ section {
 # Director Section
 --------------------------------------------------------------*/
 #director {
-  background: #d1c9c0;
+  background-color:  #a09485;
 }
 
 .about-director {
-  background-color: #d1c9c0; /* Light beige background */
+  background-color: #d2c9bf; /* Light beige background */
   padding: 60px 0;
   text-align: center;
 }
@@ -1636,8 +1636,8 @@ section {
 }
 
 .image-container3 {
-  background: #f5f2ed;
-  padding: 10px;
+  background: #D1CBC4;
+  padding: 20px;
   display: inline-block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
@@ -1646,7 +1646,7 @@ section {
 .director-img {
   width: 100%;
   max-width: 250px;
-  border: 5px solid #fff;
+  border: 5px solid #D1CBC4;
 }
 
 .director-name {
