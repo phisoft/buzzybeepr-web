@@ -1765,6 +1765,25 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.full-image-section {
+  background-color: #f5f2ed;
+  padding: 0;
+  margin: 0;
+}
+
+.full-image-section .container {
+  padding: 0;
+  max-width: 100%; /* Ensure the image takes full row width */
+}
+
+.full-image-section img {
+  width: 100%; /* Full width of container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 40vh; /* Limit height to make it smaller */
+  display: block; /* Remove any extra space below the image */
+  object-fit: cover; /* Ensures the image scales nicely within its container */
+}
+
 .services-brand {
   background-color: #f5f2ed;
 }
