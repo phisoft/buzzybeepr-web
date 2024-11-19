@@ -384,7 +384,7 @@ h6 {
   padding: 10px 0;
   background: #fefdf8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 99.98vw;
+  width:100%;
 }
 
 #header.header-scrolled {
@@ -546,7 +546,8 @@ h6 {
 
   .mobile-nav-toggle {
     display: block;
-    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
     top: 15px;
     right: 15px;
   }
@@ -619,7 +620,7 @@ h6 {
 
 .navbar ul li a {
   text-decoration: none;
-  color: #333;
+  color: black;
   font-weight: 500;
   font-size: 14px;
   transition: color 0.3s ease;
@@ -793,7 +794,6 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  /* color: #222222; */
   color: black;
   font-size: 36px;
   cursor: pointer;
@@ -1827,8 +1827,13 @@ section {
 }
 
 @media (max-width: 768px) {
+  .full-image-section .container img {
+    width: 100%;
+    height: auto;
+  }
+
   .services-brand {
-    height: 200px; /* Reduced height for smaller screens */
+    height: 100%; /* Reduced height for smaller screens */
   }
 
   .box {
@@ -1840,18 +1845,22 @@ section {
   }
 
   .content-box {
-    padding: 10px;
+    margin-bottom: 10% auto ;
   }
 
   .img-fluid1,
   .img-fluid2 {
-    max-width: 90%; /* Reduce image size to fit smaller screens */
+    max-width: 80%; /* Reduce image size to fit smaller screens */
     margin: 0 auto; /* Center images */
   }
 
   .description1 {
     font-size: 12px;
     line-height: 1.5;
+  }
+
+  .row > div{
+    margin-bottom: 20px;
   }
 
 }
