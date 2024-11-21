@@ -564,11 +564,19 @@ h6 {
 }
 
 .navbar {
+  display: flex;
   padding: 0;
 }
 
 .navbar .left {
   float: left;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li a {
@@ -619,7 +627,7 @@ h6 {
   margin-left: 5px;
 }
 
-/* .navbar a {
+.navbar a {
     color: white;
     border-bottom: 3px solid transparent;
     transition: border-bottom 0.3s ease-in-out;
@@ -628,7 +636,7 @@ h6 {
   .navbar a:hover {
     border-bottom: 3px solid white;
     color: white;
-  } */
+  }
 
 .navbar a {
   position: relative;
