@@ -1818,7 +1818,7 @@ section {
   }
 
   .box h2 {
-    font-size: 32px; /* Smaller font for mobile */
+    font-size: 42px; /* Smaller font for mobile */
   }
 
   .content-box {
@@ -1827,7 +1827,7 @@ section {
 
   .img-fluid1,
   .img-fluid2 {
-    max-width: 80%; /* Reduce image size to fit smaller screens */
+    max-width: 90%; /* Reduce image size to fit smaller screens */
     margin: 0 auto; /* Center images */
   }
 
@@ -1876,9 +1876,9 @@ section {
 }
 
 .img-fluid1 {
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .img-fluid2 {
@@ -1887,6 +1887,11 @@ section {
   margin-bottom: 30px;
 }
 
+.img-fluid3 {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 30px;
+}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -1984,7 +1989,7 @@ section {
 .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 300px;
+  height: 350px;
   perspective: 1000px; 
   margin-bottom: 20px;
 }
