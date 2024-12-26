@@ -1827,8 +1827,8 @@ section {
 
   .img-fluid1,
   .img-fluid2 {
-    max-width: 90%; /* Reduce image size to fit smaller screens */
-    margin: 0 auto; /* Center images */
+    max-width: 90%; 
+    margin: 0 auto;
   }
 
   .description1 {
@@ -2044,6 +2044,7 @@ section {
 
 .description-hover li {
   margin-bottom: 5px;
+  font-size: 14px;
 }
 
 
@@ -2058,6 +2059,25 @@ section {
 
 .icon-box:hover .description-hover {
   display: block;
+}
+
+@media (max-width: 567px) {
+  .img-fluid1 {
+      max-width: 70%; 
+      margin: 20px auto;
+  }
+
+  .description1 {
+    font-size: 12px;
+  }
+
+  .description-hover li {
+    font-size: 12px;
+  }
+
+  .flip-card {
+    height: 400px;
+  }
 }
 
 @media (min-width: 1200px) {
